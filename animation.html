@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style type="text/css">
+.d1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 128, 19);
+    animation-name: any;
+    position: relative;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate-reverse;
+   /* transition: 5s; */
+   
+}
+@keyframes any{
+    0%{
+        left:0px;
+        top:0px
+    }
+    20%{
+        left: 500px;
+        top:0px;
+        background-color: red;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px black;
+        transition-duration: 2s;
+        transform: rotate(360deg);
+      
+    }
+    50%{
+        left: 500px;
+        top:500px;
+        background-color: red;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px black;
+        transition-duration: 2s;
+        transform: rotate(360deg);
+      
+    }
+   
+
+   
+    100%{
+        left:0px;
+        top:0px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="d1" ></div>
+    <div class="d2"></div>
+</body>
+</html>
